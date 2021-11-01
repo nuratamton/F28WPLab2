@@ -1,0 +1,43 @@
+#bear {
+    position: absolute;
+    left: 550px;
+    top: 100px;
+    width: 100px;
+    height: 160px
+}
+
+#board {
+    position: absolute;
+    height: 500px;
+    width: 1400px;
+    background-color: #0c5720;
+    align-content: center;
+    align-self: center;
+}
+
+#title {
+    background-color: #7d7d7d;
+    width: 1400px;
+    align-content: center;
+    align-self: center;
+}
+
+#scores {
+    background-color: #338a4a;
+    height: 50px;
+    width: 1400px;
+    align-content: center;
+    align-self: center;
+}
+
+.location {
+    color: green;
+}
+
+#hits {
+    color: red;
+}
+
+#duration {
+    color: blue;
+}
