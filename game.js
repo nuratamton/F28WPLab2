@@ -1,5 +1,5 @@
 function Bear() {
-  this.dBear = 100;
+  this.dBear = document.getElementById("speedBear").value;
   this.htmlElement = document.getElementById("bear");
   this.id = this.htmlElement.id;
   this.x = this.htmlElement.offsetLeft;
@@ -20,6 +20,7 @@ function Bear() {
     this.htmlElement.style.top = this.y + "px";
     this.htmlElement.style.display = "block";
   };
+
   this.fitBounds = function () {
     let parent = this.htmlElement.parentElement;
     let iw = this.htmlElement.offsetWidth;
@@ -174,13 +175,10 @@ function updateBees() {
   //update loop for game
   //move the bees randomly
   moveBees();
-  //use a fixed update perios
-  //<input type="text" value = "10"></input>
+  //use a fixed update period
   //let period = 10; //modify this to control refresh period
   let period = document.getElementById("periodTimer").value;
-  //update the timer for the next move
-  //updateTimer = setTimeout({updateBees();}, period);
-
+ 
   function updateTimer() {
     //var indicator
     var score = document.getElementById("hits").innerHTML;
@@ -202,7 +200,7 @@ function isHit(defender, offender) {
   if (overlap(defender, offender)) {
     //check if the two image overlap
     let score = document.getElementById("hits").innerHTML;
-    score = Number(score) + 1; //increment the score hits.innerHTML = score; //display the new score //calculate longest duration
+    score = Number(score) + 1; //increment the score //display the new score //calculate longest duration
     hits.innerHTML = score;
     let newStingTime = new Date();
     let thisDuration = newStingTime - lastStingTime;
@@ -248,6 +246,7 @@ function addBees() {
 }
 
 function start() {
+  document.getElementById("hits").innerHTML=0;
   //create bear
   bear = new Bear();
   // Add an event listener to the keypress event.

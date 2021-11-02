@@ -9,7 +9,7 @@
 #board {
     position: absolute;
     height: 500px;
-    width: 1400px;
+    width: 1500px;
     background-color: #0c5720;
     align-content: center;
     align-self: center;
@@ -17,7 +17,7 @@
 
 #title {
     background-color: #7d7d7d;
-    width: 1400px;
+    width: 1500px;
     align-content: center;
     align-self: center;
 }
@@ -25,7 +25,7 @@
 #scores {
     background-color: #338a4a;
     height: 50px;
-    width: 1400px;
+    width: 1500px;
     align-content: center;
     align-self: center;
 }
